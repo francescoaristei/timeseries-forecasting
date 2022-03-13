@@ -60,6 +60,7 @@ However the performances obtained were not satisfying (~10 as submission score).
 
 
 1 F. Chollet, Deep Learning with Python, 2017
+
 2 F. Chollet, Deep Learning with Python, referring to Yarin Gal,
 https://mlg.eng.cam.ac.uk/yarin/thesis/thesis.pdf
 
