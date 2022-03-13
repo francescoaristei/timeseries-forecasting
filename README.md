@@ -8,7 +8,7 @@ However we noticed that certain feature trends look very similar.
 After performing a correlation analysis, using a scatter plot, it is evident the correlation between ‘Crunchiness’ and ‘Hype Root’ and between ‘Wonder Level’ and
 ‘Loudness on Impact’.
 
-![Screenshot1](./img/screenshot1.jpeg "Screenshot1")
+![Screenshot1](./img/screenshot1.png "Screenshot1")
 
 We also found no particular trend or seasonality in the dataset, confirmed by the following
 analysis: the mean and stddev are constant over time, Augmented Dickey-Fuller test returned
@@ -18,7 +18,7 @@ So we can conclude their stationarity.
 Dataset is not normalised, so we normalised it with Scikit Learn MinMaxScaler, to obtain mean
 = 0 and stddev = 1
 
-![Screenshot2](./img/screenshot2.jpeg "Screenshot2")
+![Screenshot2](./img/screenshot2.png "Screenshot2")
 
 ### Models
 We tried the following models:
@@ -67,11 +67,11 @@ We noticed that models with smaller windows (< 400) yielded better results in th
 submissions, as well as in local testing (i.e. prediction better matching the test shape). We can
 hypothesise that bigger windows lead to overfitting.
 
-![Screenshot3](./img/screenshot3.jpeg "Screenshot3")
+![Screenshot3](./img/screenshot3.png "Screenshot3")
 
 
 Overall, our best performing model is surprisingly simple: it consists of just a single GRU layer with a small window and a small
 amount of units. In the image on the side the red line represents the predictions of the best model. We can observe it’s much less noisy than the
 ones with multiple layers.
 
-![Screenshot4](./img/screenshot4.jpeg "Screenshot4")
+![Screenshot4](./img/screenshot4.png "Screenshot4")
